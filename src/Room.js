@@ -5,7 +5,7 @@ const Room = () =>{
     const [roomLight, setLight] = useState(true)
     const [Age, setAge] = useState(20)
     return(
-        <div className= {`room ${roomLight? "on": "off"}`}>
+        <div className= {`room ${roomLight? "on":"off"}`}>
             Light: {roomLight ? "ON":"OFF"}
             <br/>
             Age : {Age}
