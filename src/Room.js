@@ -1,10 +1,11 @@
 import React , { useState } from 'react'
+import './Room.css'
 
 const Room = () =>{
     const [roomLight, setLight] = useState(true)
     const [Age, setAge] = useState(20)
     return(
-        <div>
+        <div className= {`room ${roomLight? "on": "off"}`}>
             Light: {roomLight ? "ON":"OFF"}
             <br/>
             Age : {Age}
